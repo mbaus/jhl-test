@@ -26,10 +26,11 @@ public class InvoiceTest {
 
   @Test
   void shouldGetInvoiceInformation() {
-    Line line = new Line();
-    Invoice invoice = new Invoice(List.of(line));
+    Line firstLine = new Line(new Quantity(2), new Fee(new Amount(new BigDecimal(500)), Currency.EURO));
+    Line secondLine = new Line(new Quantity(1), new Fee(new Amount(new BigDecimal(400)), Currency.EURO));
+    Invoice invoice = new Invoice(List.of(firstLine, secondLine));
 
-    assertThat(invoice.lines()).containsExactly(line);
+    assertThat(invoice.lines()).containsExactly(firstLine, secondLine);
     assertThat(invoice.total()).isEqualTo(new Fee(new Amount(new BigDecimal(1400)), Currency.EURO));
   }
 }
