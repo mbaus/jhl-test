@@ -5,6 +5,6 @@ import java.util.Collection;
 
 public record Invoice(Collection<Line> lines) {
   public Invoice {
-    Assert.notNull("lines", lines);
+    Assert.notEmpty("lines", lines);
   }
 }
