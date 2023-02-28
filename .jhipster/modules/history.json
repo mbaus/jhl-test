@@ -7,5 +7,14 @@
     "module" : "application-service-hexagonal-architecture-documentation",
     "date" : "2023-02-28T15:32:46.267130Z",
     "properties" : { }
+  }, {
+    "module" : "init",
+    "date" : "2023-02-28T15:36:43.590904Z",
+    "properties" : {
+      "projectName" : "React Ts Fullstack Kurs",
+      "baseName" : "ReactFullstack",
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
   } ]
 }
