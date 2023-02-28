@@ -16,5 +16,15 @@
       "endOfLine" : "lf",
       "indentSize" : 2
     }
+  }, {
+    "module" : "maven-java",
+    "date" : "2023-02-28T15:37:00.434506Z",
+    "properties" : {
+      "projectName" : "React Ts Fullstack Kurs",
+      "baseName" : "ReactFullstack",
+      "endOfLine" : "lf",
+      "indentSize" : 2,
+      "packageName" : "com.luv2code.springbootlibrary"
+    }
   } ]
 }
