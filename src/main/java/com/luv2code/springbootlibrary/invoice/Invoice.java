@@ -7,4 +7,9 @@ public record Invoice(Collection<Line> lines) {
   public Invoice {
     Assert.notEmpty("lines", lines);
   }
+
+  public Fee total() {
+    //TODO
+    return null;
+  }
 }
