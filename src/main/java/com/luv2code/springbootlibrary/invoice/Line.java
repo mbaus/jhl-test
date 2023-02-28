@@ -7,5 +7,9 @@ public record Line(Quantity quantity, Fee unitPrice) {
     Assert.notNull("quantity", quantity);
     Assert.notNull("unitPrice", unitPrice);
   }
+
+  public Fee total() {
+    return unitPrice.times(quantity);
+  }
   //TODO
 }

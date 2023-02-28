@@ -9,7 +9,6 @@ public record Invoice(Collection<Line> lines) {
   }
 
   public Fee total() {
-    //TODO
-    return null;
+    return lines.stream().map(Line::total).reduce(Fee.ZERO, Fee::add);
   }
 }
