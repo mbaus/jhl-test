@@ -19,6 +19,6 @@ public record Amount(BigDecimal amount) {
   public Amount add(Amount other) {
     Assert.notNull("other", other);
 
-    return new Amount(amount.add(other.amount));
+    return new Amount(amount().add(other.amount));
   }
 }
