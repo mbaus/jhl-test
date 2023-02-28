@@ -3,5 +3,9 @@
     "module" : "infinitest-filters",
     "date" : "2023-02-28T15:32:39.909118Z",
     "properties" : { }
+  }, {
+    "module" : "application-service-hexagonal-architecture-documentation",
+    "date" : "2023-02-28T15:32:46.267130Z",
+    "properties" : { }
   } ]
 }
