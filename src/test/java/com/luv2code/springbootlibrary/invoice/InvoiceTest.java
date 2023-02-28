@@ -29,6 +29,6 @@ public class InvoiceTest {
     Invoice invoice = new Invoice(List.of(line));
 
     assertThat(invoice.lines()).containsExactly(line);
-    assertThat(invoice.total()); //TODO
+    assertThat(invoice.total()).isEqualTo(new Fee(new Amount(), Currency.EURO));
   }
 }
