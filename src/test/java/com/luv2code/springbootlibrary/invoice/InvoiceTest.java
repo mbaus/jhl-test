@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import com.luv2code.springbootlibrary.UnitTest;
 import com.luv2code.springbootlibrary.error.domain.MissingMandatoryValueException;
+import java.math.BigDecimal;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
@@ -29,6 +30,6 @@ public class InvoiceTest {
     Invoice invoice = new Invoice(List.of(line));
 
     assertThat(invoice.lines()).containsExactly(line);
-    assertThat(invoice.total()).isEqualTo(new Fee(new Amount(), Currency.EURO));
+    assertThat(invoice.total()).isEqualTo(new Fee(new Amount(new BigDecimal(1400)), Currency.EURO));
   }
 }

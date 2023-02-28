@@ -1,5 +1,10 @@
 package com.luv2code.springbootlibrary.invoice;
 
-public record Amount() {
-  //TODO
+import com.luv2code.springbootlibrary.error.domain.Assert;
+import java.math.BigDecimal;
+
+public record Amount(BigDecimal amount) {
+  public Amount {
+    Assert.field("amount", amount).notNull().min(0);
+  }
 }
