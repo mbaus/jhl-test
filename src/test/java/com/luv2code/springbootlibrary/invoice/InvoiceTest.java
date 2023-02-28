@@ -1,5 +1,6 @@
 package com.luv2code.springbootlibrary.invoice;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import com.luv2code.springbootlibrary.UnitTest;
@@ -20,5 +21,13 @@ public class InvoiceTest {
     assertThatThrownBy(() -> new Invoice(List.of()))
       .isExactlyInstanceOf(MissingMandatoryValueException.class)
       .hasMessageContaining("lines");
+  }
+
+  @Test
+  void shouldGetInvoiceInformation() {
+    Line line = new Line();
+    Invoice invoice = new Invoice(List.of(line));
+
+    assertThat(invoice.lines()).containsExactly(line);
   }
 }
