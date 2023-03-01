@@ -2,6 +2,7 @@ package com.luv2code.springbootlibrary.invoice;
 
 import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.fee;
 import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.firstLine;
+import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.invoiceId;
 import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.secondLine;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -16,12 +17,14 @@ public class InvoiceTest {
 
   @Test
   void shouldNotBuildWithoutLines() {
-    assertThatThrownBy(() -> new Invoice(null)).isExactlyInstanceOf(MissingMandatoryValueException.class).hasMessageContaining("lines");
+    assertThatThrownBy(() -> new Invoice(invoiceId(), null))
+      .isExactlyInstanceOf(MissingMandatoryValueException.class)
+      .hasMessageContaining("lines");
   }
 
   @Test
   void shouldNotBuildWithZeroLines() {
-    assertThatThrownBy(() -> new Invoice(List.of()))
+    assertThatThrownBy(() -> new Invoice(invoiceId(), List.of()))
       .isExactlyInstanceOf(MissingMandatoryValueException.class)
       .hasMessageContaining("lines");
   }
