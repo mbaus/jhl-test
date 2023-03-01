@@ -77,5 +77,16 @@
       "endOfLine" : "lf",
       "serverPort" : 8080
     }
+  }, {
+    "module" : "spring-boot-tomcat",
+    "date" : "2023-03-01T10:54:30.047272Z",
+    "properties" : {
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "baseName" : "ReactFullstack",
+      "endOfLine" : "lf",
+      "serverPort" : 8080
+    }
   } ]
 }
