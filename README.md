@@ -16,7 +16,6 @@ npm install
 
 ## Local environment
 
-
 <!-- jhipster-needle-localEnvironment -->
 
 ## Start up
@@ -25,12 +24,12 @@ npm install
 ./mvnw
 ```
 
-
 <!-- jhipster-needle-startupCommand -->
 
 ## Documentation
 
 - [Package types](documentation/package-types.md)
 - [Assertions](documentation/assertions.md)
+- [Logs spy](documentation/logs-spy.md)
 
 <!-- jhipster-needle-documentation -->

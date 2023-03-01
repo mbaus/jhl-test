@@ -56,5 +56,15 @@
       "indentSize" : 2,
       "packageName" : "com.luv2code.springbootlibrary"
     }
+  }, {
+    "module" : "spring-boot",
+    "date" : "2023-03-01T10:54:03.347394Z",
+    "properties" : {
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "baseName" : "ReactFullstack",
+      "endOfLine" : "lf"
+    }
   } ]
 }
