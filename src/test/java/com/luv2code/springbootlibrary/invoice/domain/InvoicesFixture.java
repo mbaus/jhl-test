@@ -1,4 +1,4 @@
-package com.luv2code.springbootlibrary.invoice;
+package com.luv2code.springbootlibrary.invoice.domain;
 
 import java.math.BigDecimal;
 import java.util.List;

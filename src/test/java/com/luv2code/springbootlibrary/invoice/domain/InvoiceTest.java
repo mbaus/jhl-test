@@ -1,9 +1,10 @@
-package com.luv2code.springbootlibrary.invoice;
+package com.luv2code.springbootlibrary.invoice.domain;
 
-import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.fee;
-import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.firstLine;
-import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.invoiceId;
-import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.secondLine;
+import static com.luv2code.springbootlibrary.invoice.domain.InvoicesFixture.fee;
+import static com.luv2code.springbootlibrary.invoice.domain.InvoicesFixture.firstLine;
+import static com.luv2code.springbootlibrary.invoice.domain.InvoicesFixture.invoce;
+import static com.luv2code.springbootlibrary.invoice.domain.InvoicesFixture.invoiceId;
+import static com.luv2code.springbootlibrary.invoice.domain.InvoicesFixture.secondLine;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
@@ -31,7 +32,7 @@ public class InvoiceTest {
 
   @Test
   void shouldGetInvoiceInformation() {
-    Invoice invoice = InvoicesFixture.invoce();
+    Invoice invoice = invoce();
 
     assertThat(invoice.lines()).containsExactly(firstLine(), secondLine());
     assertThat(invoice.total()).isEqualTo(fee(1400));

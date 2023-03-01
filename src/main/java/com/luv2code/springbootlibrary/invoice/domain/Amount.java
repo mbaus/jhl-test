@@ -1,4 +1,4 @@
-package com.luv2code.springbootlibrary.invoice;
+package com.luv2code.springbootlibrary.invoice.domain;
 
 import com.luv2code.springbootlibrary.error.domain.Assert;
 import java.math.BigDecimal;

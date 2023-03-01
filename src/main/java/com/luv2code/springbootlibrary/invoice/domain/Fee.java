@@ -1,7 +1,6 @@
-package com.luv2code.springbootlibrary.invoice;
+package com.luv2code.springbootlibrary.invoice.domain;
 
 import com.luv2code.springbootlibrary.error.domain.Assert;
-import java.util.function.BinaryOperator;
 
 public record Fee(Amount amount, Currency currency) {
   public static final Fee ZERO = new Fee(Amount.ZERO, Currency.EURO);
