@@ -11,5 +11,4 @@ public record Line(Quantity quantity, Fee unitPrice) {
   public Fee total() {
     return unitPrice.times(quantity);
   }
-  //TODO
 }

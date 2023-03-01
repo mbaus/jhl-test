@@ -1,5 +1,8 @@
 package com.luv2code.springbootlibrary.invoice;
 
+import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.fee;
+import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.firstLine;
+import static com.luv2code.springbootlibrary.invoice.InvoicesFixture.secondLine;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
@@ -26,19 +29,9 @@ public class InvoiceTest {
 
   @Test
   void shouldGetInvoiceInformation() {
-    Line firstLine = new Line(new Quantity(2), fee(500));
-    Line secondLine = new Line(new Quantity(1), fee(400));
-    Invoice invoice = new Invoice(List.of(firstLine, secondLine));
+    Invoice invoice = InvoicesFixture.invoce();
 
-    assertThat(invoice.lines()).containsExactly(firstLine, secondLine);
+    assertThat(invoice.lines()).containsExactly(firstLine(), secondLine());
     assertThat(invoice.total()).isEqualTo(fee(1400));
-  }
-
-  private static Fee fee(int amount) {
-    return new Fee(amount(amount), Currency.EURO);
-  }
-
-  private static Amount amount(int amount) {
-    return new Amount(new BigDecimal(amount));
   }
 }
