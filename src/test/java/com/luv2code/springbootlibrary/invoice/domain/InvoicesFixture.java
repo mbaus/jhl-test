@@ -9,7 +9,15 @@ public final class InvoicesFixture {
   private InvoicesFixture() {}
 
   public static Invoice invoce() {
-    return new Invoice(invoiceId(), List.of(firstLine(), secondLine()));
+    return new Invoice(invoiceId(), lines());
+  }
+
+  public static InvoiceToCreate invoiceToCreate() {
+    return new InvoiceToCreate(lines());
+  }
+
+  private static List<Line> lines() {
+    return List.of(firstLine(), secondLine());
   }
 
   public static InvoiceId invoiceId() {
