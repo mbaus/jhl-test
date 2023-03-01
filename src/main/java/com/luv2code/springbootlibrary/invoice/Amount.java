@@ -2,12 +2,15 @@ package com.luv2code.springbootlibrary.invoice;
 
 import com.luv2code.springbootlibrary.error.domain.Assert;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public record Amount(BigDecimal amount) {
   public static final Amount ZERO = new Amount(BigDecimal.ZERO);
 
-  public Amount {
+  public Amount(BigDecimal amount) {
     Assert.field("amount", amount).notNull().min(0);
+
+    this.amount = amount.setScale(2, RoundingMode.HALF_UP);
   }
 
   public Amount times(Quantity quantity) {

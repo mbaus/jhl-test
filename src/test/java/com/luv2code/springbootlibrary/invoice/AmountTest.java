@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class AmountTest {
 
   @Test
-  void shouldRoundAtTwoDigets() {
+  void shouldScaleAtTwoDigets() {
     assertThat(new Amount(new BigDecimal("12.137"))).isEqualTo(new Amount(new BigDecimal("12.14")));
   }
 }
