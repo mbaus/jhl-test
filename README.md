@@ -42,5 +42,6 @@ docker compose -f src/main/docker/postgresql.yml up -d
 - [Postgresql](documentation/postgresql.md)
 - [Dev tools](documentation/dev-tools.md)
 - [Caffeine](documentation/caffeine.md)
+- [Application errors](documentation/application-errors.md)
 
 <!-- jhipster-needle-documentation -->

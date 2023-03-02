@@ -187,5 +187,16 @@
       "serverPort" : 8080,
       "baseName" : "ReactFullstack"
     }
+  }, {
+    "module" : "internationalized-errors",
+    "date" : "2023-03-02T21:27:50.122091Z",
+    "properties" : {
+      "endOfLine" : "lf",
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "serverPort" : 8080,
+      "baseName" : "ReactFullstack"
+    }
   } ]
 }
