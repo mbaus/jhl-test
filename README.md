@@ -41,5 +41,6 @@ docker compose -f src/main/docker/postgresql.yml up -d
 - [Cucumber](documentation/cucumber.md)
 - [Postgresql](documentation/postgresql.md)
 - [Dev tools](documentation/dev-tools.md)
+- [Caffeine](documentation/caffeine.md)
 
 <!-- jhipster-needle-documentation -->
