@@ -264,5 +264,16 @@
       "serverPort" : 8080,
       "baseName" : "ReactFullstack"
     }
+  }, {
+    "module" : "spring-boot-oauth2-account",
+    "date" : "2023-03-02T21:28:17.667922Z",
+    "properties" : {
+      "endOfLine" : "lf",
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "serverPort" : 8080,
+      "baseName" : "ReactFullstack"
+    }
   } ]
 }
