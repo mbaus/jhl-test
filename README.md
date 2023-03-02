@@ -27,6 +27,11 @@ npm install
 ./mvnw
 ```
 
+```bash
+docker compose -f src/main/docker/sonar.yml up -d
+./mvnw clean verify sonar:sonar
+```
+
 <!-- jhipster-needle-startupCommand -->
 
 ## Documentation
@@ -39,5 +44,6 @@ npm install
 - [Cucumber authentication](documentation/cucumber-authentication.md)
 - [Dummy](documentation/dummy.md)
 - [JWT basic auth](documentation/jwt-basic-auth.md)
+- [sonar](documentation/sonar.md)
 
 <!-- jhipster-needle-documentation -->
