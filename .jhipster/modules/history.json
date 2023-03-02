@@ -56,5 +56,48 @@
       "indentSize" : 2,
       "packageName" : "com.luv2code.springbootlibrary"
     }
+  }, {
+    "module" : "spring-boot",
+    "date" : "2023-03-01T10:54:03.347394Z",
+    "properties" : {
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "baseName" : "ReactFullstack",
+      "endOfLine" : "lf"
+    }
+  }, {
+    "module" : "spring-boot-mvc-empty",
+    "date" : "2023-03-01T10:54:23.451316Z",
+    "properties" : {
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "baseName" : "ReactFullstack",
+      "endOfLine" : "lf",
+      "serverPort" : 8080
+    }
+  }, {
+    "module" : "spring-boot-tomcat",
+    "date" : "2023-03-01T10:54:30.047272Z",
+    "properties" : {
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "baseName" : "ReactFullstack",
+      "endOfLine" : "lf",
+      "serverPort" : 8080
+    }
+  }, {
+    "module" : "spring-boot-cucumber-mvc",
+    "date" : "2023-03-01T10:55:11.611525Z",
+    "properties" : {
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "baseName" : "ReactFullstack",
+      "endOfLine" : "lf",
+      "serverPort" : 8080
+    }
   } ]
 }
