@@ -99,5 +99,16 @@
       "endOfLine" : "lf",
       "serverPort" : 8080
     }
+  }, {
+    "module" : "java-enums",
+    "date" : "2023-03-02T21:27:05.228686Z",
+    "properties" : {
+      "endOfLine" : "lf",
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "serverPort" : 8080,
+      "baseName" : "ReactFullstack"
+    }
   } ]
 }
