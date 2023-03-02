@@ -2,6 +2,7 @@ import './App.css';
 
 import JHipsterLiteNeonBlue from '@assets/JHipster-Lite-neon-blue.png';
 import ReactLogo from '@assets/ReactLogo.png';
+import { Link } from "react-router-dom";
 
 import LoginForm from '@/login/primary/loginForm';
 
@@ -29,6 +30,10 @@ function App() {
             React Documentation
           </a>
         </p>
+
+        {/*<p>*/}
+        {/*  <Link to="/beers">I love beer</Link>*/}
+        {/*</p>*/}
 
         <p>
           Edit&nbsp;
