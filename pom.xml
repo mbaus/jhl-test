@@ -36,6 +36,7 @@
     <testcontainers.version>1.17.6</testcontainers.version>
     <archunit-junit5.version>1.0.1</archunit-junit5.version>
     <liquibase.version>4.19.0</liquibase.version>
+    <git-commit-id-plugin.version>5.0.0</git-commit-id-plugin.version>
   </properties>
 
   <dependencyManagement>
@@ -388,6 +389,29 @@
             <mainClass>com.luv2code.springbootlibrary.ReactFullstackApp</mainClass>
           </configuration>
         </plugin>
+        <plugin>
+          <groupId>io.github.git-commit-id</groupId>
+          <artifactId>git-commit-id-maven-plugin</artifactId>
+          <version>${git-commit-id-plugin.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>revision</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <failOnNoGitDirectory>false</failOnNoGitDirectory>
+            <failOnUnableToExtractRepoInfo>false</failOnUnableToExtractRepoInfo>
+            <generateGitPropertiesFile>true</generateGitPropertiesFile>
+            <includeOnlyProperties>
+              <includeOnlyProperty>^git.commit.id.abbrev$</includeOnlyProperty>
+              <includeOnlyProperty>^git.commit.id.describe$</includeOnlyProperty>
+              <includeOnlyProperty>^git.branch$</includeOnlyProperty>
+            </includeOnlyProperties>
+            <verbose>false</verbose>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -456,6 +480,10 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>io.github.git-commit-id</groupId>
+        <artifactId>git-commit-id-maven-plugin</artifactId>
       </plugin>
     </plugins>
     <defaultGoal>spring-boot:run</defaultGoal>
