@@ -7,4 +7,12 @@ public record InvoiceId(UUID id) {
   public InvoiceId {
     Assert.notNull("id", id);
   }
+
+  public UUID get() {
+    return id();
+  }
+
+  public static InvoiceId newId() {
+    return new InvoiceId(UUID.randomUUID());
+  }
 }

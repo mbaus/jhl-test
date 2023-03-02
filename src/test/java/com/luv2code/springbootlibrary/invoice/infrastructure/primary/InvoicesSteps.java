@@ -22,6 +22,7 @@ public class InvoicesSteps {
   @Given("I create invoice")
   public void createInvoice(List<Map<String, String>> lines) {
     String payload = "{\"lines\":[" + linesPayload(lines) + "]}";
+
     rest.post("/api/invoices", payload);
   }
 
@@ -29,14 +30,14 @@ public class InvoicesSteps {
     return lines
       .stream()
       .map(line ->
-        "\"quantity\": " + line.get("Quantity") + ", \"unitPrice\": {\"amount\": " + line.get("Unit price") + ", \"currency\": \"EURO\"}"
+        "{\"quantity\":" + line.get("Quantity") + ", \"unitPrice\": {\"amount\": " + line.get("Unit price") + ", \"currency\": \"EURO\"}}"
       )
       .collect(Collectors.joining(","));
   }
 
   @When("I get the created invoice")
   public void getCreatedInvoice() {
-    rest.get("/api/invoices/" + CucumberTestContext.getElement("$..id"));
+    rest.get("/api/invoices/" + CucumberTestContext.getElement("$.id"));
   }
 
   @Then("I should have invoice")

@@ -16,6 +16,10 @@ public class RestFee {
     this.currency = currency;
   }
 
+  static RestFee from(Fee fee) {
+    return new RestFee(fee.amount().get(), fee.currency());
+  }
+
   public BigDecimal getAmount() {
     return amount;
   }

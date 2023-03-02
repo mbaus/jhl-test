@@ -7,4 +7,4 @@ Feature: Invoices
       | 2        | 500.00     |
     When I get the created invoice
     Then I should have invoice
-      | Total | 1450.00 |
+      | Total. Amount | 1450.0 |
