@@ -4,23 +4,55 @@
   "private": true,
   "description": "React Ts Fullstack Kurs",
   "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc && vite build --emptyOutDir",
+    "dev": "vite",
+    "lint": "eslint --ext .js,.ts,.tsx src/main/webapp/app/**/*",
+    "prepare": "husky install",
+    "prettier:check": "prettier --check \"{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java,xml}\"",
+    "prettier:format": "prettier --write \"{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java,xml}\"",
+    "preview": "vite preview",
+    "start": "vite",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest --"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "2.2.0",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "@types/node": "18.14.1",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@types/ws": "8.5.4",
+    "@typescript-eslint/eslint-plugin": "5.53.0",
+    "@vitejs/plugin-react": "3.1.0",
+    "@vitest/coverage-istanbul": "0.28.5",
+    "eslint": "8.34.0",
+    "eslint-plugin-react": "7.32.2",
+    "husky": "8.0.3",
+    "jsdom": "21.1.0",
+    "lint-staged": "13.1.2",
+    "prettier": "2.8.4",
+    "prettier-plugin-java": "2.0.0",
+    "prettier-plugin-packagejson": "2.4.3",
+    "ts-node": "10.9.1",
+    "typescript": "4.9.5",
+    "vite": "4.1.4",
+    "vitest": "0.28.5",
+    "vitest-sonar-reporter": "0.3.5"
+  },
   "engines": {
     "node": ">=18.14.0"
   },
   "cacheDirectories": [
     "node_modules"
   ],
-  "scripts": {
-    "prepare": "husky install",
-    "prettier:check": "prettier --check \"{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java,xml}\"",
-    "prettier:format": "prettier --write \"{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java,xml}\""
-  },
-  "devDependencies": {
-    "@prettier/plugin-xml": "2.2.0",
-    "husky": "8.0.3",
-    "lint-staged": "13.1.2",
-    "prettier": "2.8.4",
-    "prettier-plugin-java": "2.0.0",
-    "prettier-plugin-packagejson": "2.4.3"
+  "jestSonar": {
+    "reportPath": "target/test-results",
+    "reportFile": "TESTS-results-sonar.xml"
   }
 }
