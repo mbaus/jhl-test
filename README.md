@@ -49,5 +49,6 @@ docker compose -f src/main/docker/keycloak.yml up -d
 - [Caffeine](documentation/caffeine.md)
 - [Application errors](documentation/application-errors.md)
 - [Jpa pages](documentation/jpa-pages.md)
+- [Rest pagination](documentation/rest-pagination.md)
 
 <!-- jhipster-needle-documentation -->
