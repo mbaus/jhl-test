@@ -35,6 +35,7 @@
     <logstash-logback-encoder.version>7.3</logstash-logback-encoder.version>
     <testcontainers.version>1.17.6</testcontainers.version>
     <archunit-junit5.version>1.0.1</archunit-junit5.version>
+    <liquibase.version>4.19.0</liquibase.version>
   </properties>
 
   <dependencyManagement>
@@ -122,6 +123,12 @@
     </dependency>
 
     <dependency>
+      <groupId>org.liquibase</groupId>
+      <artifactId>liquibase-core</artifactId>
+      <version>${liquibase.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
@@ -185,6 +192,12 @@
       <groupId>com.tngtech.archunit</groupId>
       <artifactId>archunit-junit5-api</artifactId>
       <version>${archunit-junit5.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
