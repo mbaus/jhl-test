@@ -15,6 +15,5 @@ module.exports = {
   rules: {
     "react/react-in-jsx-scope": "off",
     "react/jsx-no-target-blank": "off",
-    "@typescript-eslint/no-empty-function": "off",
   }
 };
