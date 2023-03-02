@@ -7,6 +7,8 @@
   "scripts": {
     "build": "tsc && vite build --emptyOutDir",
     "dev": "vite",
+    "e2e": "npm run test:component",
+    "e2e:headless": "npm run test:component:headless",
     "lint": "eslint --ext .js,.ts,.tsx src/main/webapp/app/**/*",
     "prepare": "husky install",
     "prettier:check": "prettier --check \"{,src/**/}*.{md,json,yml,html,js,ts,tsx,css,scss,vue,java,xml}\"",
@@ -14,6 +16,8 @@
     "preview": "vite preview",
     "start": "vite",
     "test": "vitest run --coverage",
+    "test:component": "cypress open --config-file src/test/javascript/integration/cypress-config.ts",
+    "test:component:headless": "cypress run --headless --config-file src/test/javascript/integration/cypress-config.ts",
     "test:watch": "vitest --"
   },
   "dependencies": {
@@ -34,7 +38,9 @@
     "@typescript-eslint/eslint-plugin": "5.53.0",
     "@vitejs/plugin-react": "3.1.0",
     "@vitest/coverage-istanbul": "0.28.5",
+    "cypress": "12.6.0",
     "eslint": "8.34.0",
+    "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-react": "7.32.2",
     "husky": "8.0.3",
     "jsdom": "21.1.0",
