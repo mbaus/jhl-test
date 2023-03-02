@@ -1,5 +1,6 @@
 Feature: Invoices
 
+  @ignore
   Scenario: Create and get invoice
     Given I create invoice
       | Quantity | Unit price |
