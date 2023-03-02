@@ -6,7 +6,6 @@ import com.luv2code.springbootlibrary.invoice.domain.InvoiceId;
 import com.luv2code.springbootlibrary.invoice.domain.InvoiceToCreate;
 import com.luv2code.springbootlibrary.invoice.domain.InvoicesRepository;
 import java.util.Optional;
-import org.springframework.http.ProblemDetail;
 import org.springframework.stereotype.Service;
 
 @Service

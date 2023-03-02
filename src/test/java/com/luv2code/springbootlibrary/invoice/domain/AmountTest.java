@@ -8,7 +8,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 @UnitTest
-public class AmountTest {
+class AmountTest {
 
   @Test
   void shouldScaleAtTwoDigets() {

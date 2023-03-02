@@ -3,7 +3,6 @@ package com.luv2code.springbootlibrary.invoice.infrastructure.primary;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.luv2code.springbootlibrary.invoice.domain.Line;
 import com.luv2code.springbootlibrary.invoice.domain.Quantity;
-import java.math.BigDecimal;
 
 public class RestLine {
 
