@@ -37,5 +37,6 @@ npm install
 - [CORS configuration](documentation/cors-configuration.md)
 - [Cucumber](documentation/cucumber.md)
 - [Cucumber authentication](documentation/cucumber-authentication.md)
+- [Dummy](documentation/dummy.md)
 
 <!-- jhipster-needle-documentation -->
