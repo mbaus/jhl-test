@@ -1,6 +1,7 @@
 package com.luv2code.springbootlibrary.cucumber;
 
 import com.luv2code.springbootlibrary.ReactFullstackApp;
+import com.luv2code.springbootlibrary.authentication.infrastructure.primary.TestSecurityConfiguration;
 import com.luv2code.springbootlibrary.cucumber.CucumberConfiguration.CucumberRestTemplateConfiguration;
 import io.cucumber.java.Before;
 import io.cucumber.spring.CucumberContextConfiguration;
@@ -21,7 +22,15 @@ import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 @CucumberContextConfiguration
-@SpringBootTest(classes = { ReactFullstackApp.class, CucumberRestTemplateConfiguration.class }, webEnvironment = WebEnvironment.RANDOM_PORT)
+@SpringBootTest(
+  classes = {
+    ReactFullstackApp.class,
+    TestSecurityConfiguration.class,
+    CucumberAuthenticationConfiguration.class,
+    CucumberRestTemplateConfiguration.class,
+  },
+  webEnvironment = WebEnvironment.RANDOM_PORT
+)
 public class CucumberConfiguration {
 
   @Autowired
