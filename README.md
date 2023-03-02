@@ -35,6 +35,11 @@ docker compose -f src/main/docker/postgresql.yml up -d
 docker compose -f src/main/docker/keycloak.yml up -d
 ```
 
+```bash
+docker compose -f src/main/docker/sonar.yml up -d
+./mvnw clean verify sonar:sonar
+```
+
 <!-- jhipster-needle-startupCommand -->
 
 ## Documentation
@@ -52,5 +57,6 @@ docker compose -f src/main/docker/keycloak.yml up -d
 - [Rest pagination](documentation/rest-pagination.md)
 - [Cucumber authentication](documentation/cucumber-authentication.md)
 - [Dummy](documentation/dummy.md)
+- [sonar](documentation/sonar.md)
 
 <!-- jhipster-needle-documentation -->
