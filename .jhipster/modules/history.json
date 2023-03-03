@@ -374,5 +374,16 @@
       "serverPort" : 8080,
       "baseName" : "ReactFullstack"
     }
+  }, {
+    "module" : "sonar-qube-java-backend-and-frontend",
+    "date" : "2023-03-03T11:14:29.421889Z",
+    "properties" : {
+      "endOfLine" : "lf",
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "serverPort" : 8080,
+      "baseName" : "ReactFullstack"
+    }
   } ]
 }
