@@ -4,10 +4,10 @@ import static com.luv2code.springbootlibrary.invoice.domain.InvoicesFixture.invo
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.luv2code.springbootlibrary.JsonHelper;
-import com.luv2code.springbootlibrary.invoice.domain.InvoicesFixture;
-import org.assertj.core.api.Assertions;
+import com.luv2code.springbootlibrary.UnitTest;
 import org.junit.jupiter.api.Test;
 
+@UnitTest
 class RestInvoiceToCreateTest {
 
   @Test

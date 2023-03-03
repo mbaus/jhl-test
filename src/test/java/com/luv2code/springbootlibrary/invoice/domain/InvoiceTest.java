@@ -14,7 +14,7 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 
 @UnitTest
-public class InvoiceTest {
+class InvoiceTest {
 
   @Test
   void shouldNotBuildWithoutLines() {
