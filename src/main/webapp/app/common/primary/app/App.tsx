@@ -3,6 +3,8 @@ import './App.css';
 import JHipsterLiteNeonBlue from '@assets/JHipster-Lite-neon-blue.png';
 import ReactLogo from '@assets/ReactLogo.png';
 
+import LoginForm from '@/login/primary/loginForm';
+
 function App() {
   return (
     <div className="App">
@@ -32,6 +34,7 @@ function App() {
           Edit&nbsp;
           <code>src/main/webapp/app/common/primary/app/App.tsx</code> to test hot module replacement.
         </p>
+        <LoginForm />
       </div>
     </div>
   );
