@@ -1,4 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /// <reference types="vitest" />
+/// <reference types="vite/client" />
 
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -19,6 +21,7 @@ export default defineConfig({
     minThreads: 1,
     maxThreads: 2,
     environment: 'jsdom',
+    setupFiles: './setupTests.ts',
     cache: false,
     include: ['src/test/javascript/spec/**/*.(spec|test).(ts|tsx)'],
     exclude: ['node_modules', 'src/test/javascript/integration/**/*.spec.ts'],

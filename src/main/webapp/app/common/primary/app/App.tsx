@@ -1,12 +1,7 @@
 function App() {
   return (
     <div>
-      <input
-        id="meinganzöanger_namespace"
-        name="meinganzöanger_namespace"
-        className="meinganzöanger_namespace_class"
-        aria-describedby="meinganzöanger_namespace"
-      />
+      <h1>Hello World</h1>
     </div>
   );
 }

@@ -16,6 +16,7 @@
     "preview": "vite preview",
     "start": "vite",
     "test": "vitest run --coverage",
+    "test:test": "vitest",
     "test:component": "cypress open --config-file src/test/javascript/integration/cypress-config.ts",
     "test:component:headless": "cypress run --headless --config-file src/test/javascript/integration/cypress-config.ts",
     "test:watch": "vitest --"
@@ -29,11 +30,13 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "2.2.0",
-    "@testing-library/react": "14.0.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "14.4.3",
     "@types/node": "18.14.1",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "@types/testing-library__jest-dom": "^5.14.5",
     "@types/ws": "8.5.4",
     "@typescript-eslint/eslint-plugin": "5.53.0",
     "@typescript-eslint/parser": "^5.54.0",

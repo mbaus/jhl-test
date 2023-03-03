@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -17,14 +21,30 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "baseUrl": "src",
-    "types": ["vitest/globals"],
+    "types": [
+      "vitest/globals"
+    ],
     "paths": {
-      "@/*": ["main/webapp/app/*"],
-      "@assets/*": ["main/webapp/assets/*"]
+      "@/*": [
+        "main/webapp/app/*"
+      ],
+      "@assets/*": [
+        "main/webapp/assets/*"
+      ]
     }
   },
-  "include": [".eslintrc.js", "src"],
-  "exclude": ["src/test/javascript/integration/**/*spec.ts", "node_modules", "src/test/javascript/integration/**/*.ts"],
+  "include": [
+    "./setupTests",
+    "vite.config.ts",
+    "vitest.config.ts",
+    ".eslintrc.js",
+    "src"
+  ],
+  "exclude": [
+    "src/test/javascript/integration/**/*spec.ts",
+    "node_modules",
+    "src/test/javascript/integration/**/*.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
