@@ -5,7 +5,7 @@
   "description": "React Ts Fullstack Kurs",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "tsc && vite build --emptyOutDir",
+    "build": "tsc -p tsconfig.node.json && vite build --emptyOutDir",
     "dev": "vite",
     "e2e": "npm run test:component",
     "e2e:headless": "npm run test:component:headless",
@@ -16,9 +16,9 @@
     "preview": "vite preview",
     "start": "vite",
     "test": "vitest run --coverage",
-    "test:test": "vitest",
     "test:component": "cypress open --config-file src/test/javascript/integration/cypress-config.ts",
     "test:component:headless": "cypress run --headless --config-file src/test/javascript/integration/cypress-config.ts",
+    "test:test": "vitest",
     "test:watch": "vitest --"
   },
   "dependencies": {
