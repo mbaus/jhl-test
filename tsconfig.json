@@ -23,7 +23,7 @@
       "@assets/*": ["main/webapp/assets/*"]
     }
   },
-  "include": ["src"],
+  "include": [".eslintrc.js", "src"],
   "exclude": ["src/test/javascript/integration/**/*spec.ts", "node_modules", "src/test/javascript/integration/**/*.ts"],
   "references": [
     {
