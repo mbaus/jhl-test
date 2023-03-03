@@ -51,5 +51,6 @@ docker compose -f src/main/docker/keycloak.yml up -d
 - [Application errors](documentation/application-errors.md)
 - [Jpa pages](documentation/jpa-pages.md)
 - [Rest pagination](documentation/rest-pagination.md)
+- [Dummy](documentation/dummy.md)
 
 <!-- jhipster-needle-documentation -->
