@@ -45,5 +45,6 @@ docker compose -f src/main/docker/keycloak.yml up -d
 - [CORS configuration](documentation/cors-configuration.md)
 - [Cucumber](documentation/cucumber.md)
 - [Postgresql](documentation/postgresql.md)
+- [Cucumber authentication](documentation/cucumber-authentication.md)
 
 <!-- jhipster-needle-documentation -->

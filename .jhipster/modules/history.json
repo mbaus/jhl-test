@@ -154,5 +154,16 @@
       "serverPort" : 8080,
       "baseName" : "ReactFullstack"
     }
+  }, {
+    "module" : "spring-boot-cucumber-oauth2-authentication",
+    "date" : "2023-03-03T10:57:10.180697Z",
+    "properties" : {
+      "endOfLine" : "lf",
+      "packageName" : "com.luv2code.springbootlibrary",
+      "projectName" : "React Ts Fullstack Kurs",
+      "indentSize" : 2,
+      "serverPort" : 8080,
+      "baseName" : "ReactFullstack"
+    }
   } ]
 }

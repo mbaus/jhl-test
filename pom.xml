@@ -33,6 +33,7 @@
     <testng.version>7.7.1</testng.version>
     <springdoc-openapi-starter-webmvc.version>2.0.2</springdoc-openapi-starter-webmvc.version>
     <testcontainers.version>1.17.6</testcontainers.version>
+    <json-web-token.version>0.11.5</json-web-token.version>
   </properties>
 
   <dependencyManagement>
@@ -185,6 +186,27 @@
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-api</artifactId>
+      <version>${json-web-token.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-impl</artifactId>
+      <version>${json-web-token.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-jackson</artifactId>
+      <version>${json-web-token.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
